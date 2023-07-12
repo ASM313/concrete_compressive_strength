@@ -59,6 +59,8 @@ class DataTransformation:
             train_df=pd.read_csv(train_path)
             test_df=pd.read_csv(test_path)
 
+            logging.info("DATA TRANSFORMATION initiated")
+
             logging.info("Reading train data and test data completed")
 
             logging.info("Obtaining preprocessing object")
@@ -86,6 +88,8 @@ class DataTransformation:
             test_arr = np.c_[input_feature_test_arr, np.array(target_feature_test_df)]
 
             logging.info(f"Saved preprocessing object.")
+
+            logging.info("---"*25)
 
             save_object(
 
