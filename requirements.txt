@@ -4,6 +4,7 @@ pandas
 scikit-learn
 scipy
 seaborn
+dill
 Werkzeug
 xgboost
 zipp
